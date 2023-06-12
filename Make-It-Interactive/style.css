@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.banner-image{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+.banner-image.active{
+    visibility: visible;
+    opacity: 1;
+}
+.banner-image:nth-child(1){
+    background-image: url('./img/IMG-5123-768x549.jpg');
+}
+.banner-image:nth-child(2){
+    background-image: url('./img/lily-banse--YHSwy6uqvk-unsplash.jpg');
+}
+.banner-image:nth-child(3){
+    background-image: url('./img/thought-catalog-Nv-vx3kUR2A-unsplash.jpg');
+}
+.banner-text{
+    background-color: orange;
+    width: 500px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px;
+    color: floralwhite;
+}
+.handlers{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    column-gap: 20px;
+}
+button{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #d1b440;
+    border-radius: 7px;
+}
+button a:hover{
+    color: whitesmoke;
+    transform: scale(1.8);
+}
+
+
+/* Navigation & Header */
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: cadetblue;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+nav ul li a:hover{
+    color: antiquewhite;
+    transform: scale(1.8);
+}
+
+/* FOOTER SECTION */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 12px;
+    font-family: Roboto, Arial, sans-serif;
+    color: #6c6c6c;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+footer p {
+    padding-top: 20px;
+  }
